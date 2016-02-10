@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js">
+    </script>
+  </head>
+  <body>
+    <center><button><h1>Change color</h1></button></center>
+    <script>
+      var colors = [
+        'red',
+        'blue',
+        'white',
+        'green',
+        'DeepPink',
+        'violet'
+      ];
+      var colorIdx = 0;
+      $('button').click(function() {
+        console.log('colorIdx is: ' + colorIdx);
+        $('body').css('background-color', colors[colorIdx]);
+        colorIdx++;
+        if (colorIdx === 6){
+          colorIdx = 0;
+        }
+      });
+    </script>
+    <button onclick="appendText()">show me the color names!!</button>
+    <script>
+    function appendText() {
+    var txt1 = "<p>weved</p>"; 
+    var txt2 = "<p>Text.</p>"; 
+    var txt3 = "<p>Text.</p>"; 
+    var txt4 = "<p>Text.</p>"; 
+    var txt5 = "<p>Text.</p>"; 
+    var txt6 = "<p>Text.</p>";
+}
+    
+    $("body").append(txt1, txt2, txt3, txt4, txt5, txt6);;
+   
+    </script>
+  </body>
+</html>
